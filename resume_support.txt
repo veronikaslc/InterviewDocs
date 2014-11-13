@@ -1,0 +1,173 @@
+SOAP
+
+Simple Object Access protocol, is a protocol specification for exchanging structured information in the implementation of web services in computer networks. It uses XML Information Set for its message format, 
+
+ SOA
+Service-oriented architecture
+A paradigm for organizing and utilizing distributed capabilities that may be under the control of different ownership domains.
+
+
+JUnit
+JUnit is a unit testing framework for the Java programming language. 
+TestNG, another test framework for Java
+
+jQuery
+jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML, DOM traversal and manipulation
+
+
+Modernizr
+JavaScript library, Browser feature detection
+
+AngularJS
+MVC Framework
+
+
+Tomcat, 
+is an open source web server and servlet container developed by the Apache Software Foundation (ASF). Tomcat implements the Java Servlet and the JavaServer Pages (JSP) specifications from Oracle, and provides a "pure Java" HTTP web server environment for Java code to run in. In the simplest config Tomcat runs in a single operating system process. The process runs a Java virtual machine (JVM). Every single HTTP request from a browser to Tomcat is processed in the Tomcat process in a separate thread.
+
+
+Spring Framework, 
+ open source application framework for building web applications on top of the Java EE platform. 
+While using Spring for transaction management with Hibernate
+
+Hibernate, 
+ object-relational mapping library for the Java language, providing a framework for mapping an object-oriented domain model to a traditional relational database. 
+
+
+Maven, 
+is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+
+Bootstrap, 
+Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+
+
+Node.js, 
+Node.js is an open source, cross-platform runtime environment for server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, Linux and FreeBSD.
+
+Node.js provides an event-driven architecture and a non-blocking I/O API that optimizes an application's throughput and scalability. These technologies are commonly used for real-time applications.
+
+Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server or IIS.
+
+
+Selenium, 
+it is for automating web applications for testing purposes,
+
+Karma, 
+low level testing environment
+AngularJS Automated Test Runner 
+
+Protractor, -HIGH LEVEL
+is an end-to-end test framework for AngularJS applications. Protractor is a Node.js program built on top of WebDriverJS. Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+
+
+ Coverity, 
+Static Analysis Verification Engine
+
+
+SonarCube
+ open source platform for Continuous Inspection of code quality
+Offers reports on duplicated code, coding standards, unit tests, code coverage, complex code, potential bugs, comments and design and architecture.
+  	
+HeartBleed testing
+ Heartbleed Bug is a serious vulnerability in the popular OpenSSL cryptographic software library. This weakness allows stealing the information protected, under normal conditions, by the SSL/TLS encryption used to secure the Internet. SSL/TLS provides communication security and privacy over the Internet for applications such as web, email, instant messaging (IM) and some virtual private networks (VPNs).
+
+The Heartbleed bug allows anyone on the Internet to read the memory of the systems protected by the vulnerable versions of the OpenSSL software. 
+
+
+Responsive design resources: 
+
+Modernizr 
+Normalize CSS 
+
+Starter projects:
+
+Bootstrap - CSS stuff
+HTML5 Boilerplate -  web project skeleton 
+
+JavaScript libraries: 
+
+jQuery 
+Backbone 
+Foundation 
+Angular 
+Underscore 
+Ember 
+jQuery UI 
+
+Download from Starter Sites:
+Sites like "Initializr" or 'HTML5 Reset" ultimately rely on source code repositories, but include commentary, comparison, and documentation related to starting web projects and general development and design topics as well.
+
+Yeoman 
+A node-based package; provides a development workflow utilizing three tools: yo - (for scaffolding), CRUD (create, read, update, delete) templating
+grunt - (for building), and 
+bower (which provides package management). 
+
+The Package Managers:
+npm
+bower
+ is used for dependency management, so that you no longer have to manually download and manage your scripts. 
+
+ DRY 
+Don't Repeat Yourself: DRY is a principle of software development which states that "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+
+Knockout 
+
+Rails 
+is a web application development framework written in the Ruby language. 
+
+Sinatra or Rails for JRuby, and Django for Jython - fraimworks
+microframework called Sinatra. Sinatra is essentially a Ruby-based wrapper of HTTP
+
+
+code Linting 
+first unit test - emmediate real-time feedback
+
+Testing can be done in:
+- in the browser: test against a recent Gecko engine (Firefox), a WebKit engine (Safari and some mobile browsers), Chrome, your supported IE browsers (take advantage of the Application Compatibility VPC Images), and Opera. Also consider how browsers render your site in different operating systems.
+- headless browser on demand via cmd like grunt qunit
+- headless browser post-push: line upon any new git commit modernizr will run test automatically
+-  cloud testing on a fly on different browsers & mobile emulaters : via command live wuth bunyip
+
+RequireJS ???
+for AMd control
+
+How to do life and load?
+
+SASS
+
+Compass
+
+Coffescript
+
+Losless image compression?
+
+General purpose source code is included in  Java Archives (JARs), 
+web applications are stored in Web Application Archives (WARs), 
+groups of related web applications can be packaged together in Enterprise Application Archives (EARs). 
+WARs can be deployed to servlet containers, while EARs require full Java Enterprise Edition support, which is available in application servers like JBoss.
+
+JBoss
+application server
+
+
+application server, 
+
+web container, 
+
+ web server
+
+servlet
+
+bin
+
+dependency injection
+
+closure
+
+Agile
+
+Comparing jQuery and Angular
+- A jQuery application directly manipulates the DOM and views it as containing the application state. An Angular application treats the model rather than the DOM as the source of truth. The model, not the DOM, is directly manipulated. Changes to the model result in the DOM being updated. 
+$("#myButton").on('click', function(){someFunction();});
+
