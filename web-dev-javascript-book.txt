@@ -1,6 +1,6 @@
 J2EE and JSP have been refined into JEE and JSF. Projects such as Spring provide additional capabilities geared toward server-side development. 
 
-Ajax == ‚Äúasynchronous JavaScript and XML,‚Äù
+Ajax == ìasynchronous JavaScript and XML,î
 
 AJAX calls cannot be sent to a different domain than the domain from which the HTML page making the AJAX calls is loaded. 
 
@@ -11,25 +11,25 @@ XML is used for exchanging data, HTML is not.(???)
 
 The core JavaScript language needs to be understood in relation to two distinct APIs: the Browser Object Model (BOM) and the Document Object Model (DOM). The BOM consists of a window and its child objects: navigator, history, screen, location, and document. The document object is the root node of the DOM, a hierarchical tree representation of the contents of the page itself.
 
-‚Ä¢ JavaScript has function-level scope rather than block-level scope like other C-like languages. Blocks such as those used by if statements and other language constructs do not create a new scope.
+ï JavaScript has function-level scope rather than block-level scope like other C-like languages. Blocks such as those used by if statements and other language constructs do not create a new scope.
 
-‚Ä¢ In JavaScript, null, undefined, and a few other values evaluate to false. 
+ï In JavaScript, null, undefined, and a few other values evaluate to false. 
 
-‚Ä¢ The if conditional expression is !x. The exclamation point is a NOT logical operator. Therefore, if x is undefined (or null), this expression if (!x) evaluates to true.
+ï The if conditional expression is !x. The exclamation point is a NOT logical operator. Therefore, if x is undefined (or null), this expression if (!x) evaluates to true.
 
-‚Ä¢ The var keyword is used to define a local variable. Variables declared without it are global. This definition results in the variable being associated with the scope of the function. 
+ï The var keyword is used to define a local variable. Variables declared without it are global. This definition results in the variable being associated with the scope of the function. 
 
-‚Ä¢ A function is being created and assigned to a variable named y. This is particularly strange to Java programmers who deal with methods that only exist attached to a class or object instance. This syntax calls attention to the functional nature of JavaScript.
+ï A function is being created and assigned to a variable named y. This is particularly strange to Java programmers who deal with methods that only exist attached to a class or object instance. This syntax calls attention to the functional nature of JavaScript.
 
-‚Ä¢ functions are fundamental units in JavaScript and are in fact ‚Äúfirst-class.‚Äù
+ï functions are fundamental units in JavaScript and are in fact ìfirst-class.î
 
-Closures are functions that have access to variables from another function‚Äôs scope. A closure occurs when a function returns an inner function. 
+Closures are functions that have access to variables from another functionís scope. A closure occurs when a function returns an inner function. 
 
 JavaScript is an interpreted language. No compilation is necessary.
 
 In Java, an object is created as an instance of a defined class. In JavaScript, an object is simply a collection of properties.
 
-object is an ‚Äúunordered collection of properties each of which contains a primitive value, object, or function.‚Äù
+object is an ìunordered collection of properties each of which contains a primitive value, object, or function.î
 
 The Document Object Model (DOM) is an application programming interface (API) for XML that
 was extended for use in HTML. The DOM maps out an entire page as a hierarchy of nodes.
@@ -42,8 +42,8 @@ with the content of a web page
 -The Browser Object Model (BOM), which provides methods and interfaces for interacting
 with the browser
 
-the following code causes an error when loaded into a browser: alert(‚Äú</script>‚Äù); This problem can be avoided easily by escaping the ‚Äú/‚Äù character alert(‚Äú<\/script>‚Äù);
-It‚Äôs important to note that a <script> element using the src attribute should not include additional
+the following code causes an error when loaded into a browser: alert(ì</script>î); This problem can be avoided easily by escaping the ì/î character alert(ì<\/script>î);
+Itís important to note that a <script> element using the src attribute should not include additional
 JavaScript code between the <script> and </script> tags. If both are provided, the script fi le is
 downloaded and executed while the inline code is ignored.
 
@@ -54,34 +54,34 @@ However, including all JavaScript files in the <head> of a document means that a
 
 an attribute named defer for the <script> element, means a script will not be executed until after the browser has received the closing </html> tag. The defer attribute is supported only for external script fi les. This was a clarification made in HTML5.
 
-Also similar to defer, async applies only to external scripts and signals the browser to begin downloading the file immediately. Unlike defer, scripts marked as async are not guaranteed to execute in the order in which they are specified. so it‚Äôs important that there are no dependencies between them. Also thats why it‚Äôs recommended that asynchronous scripts not modify the DOM as they are loading.
+Also similar to defer, async applies only to external scripts and signals the browser to begin downloading the file immediately. Unlike defer, scripts marked as async are not guaranteed to execute in the order in which they are specified. so itís important that there are no dependencies between them. Also thats why itís recommended that asynchronous scripts not modify the DOM as they are loading.
 
 <noscript> element was created to provide alternate content for browsers without JavaScript of with one turned off.
 
 Everything is case-sensitive; (sucks!)
 
-‚Äúuse strict‚Äù; - Strict mode is a different parsing and execution model for JavaScript, when errors are thrown for unsafe activities; this is a pragma that tells supporting JavaScript engines to change into strict mode.
+ìuse strictî; - Strict mode is a different parsing and execution model for JavaScript, when errors are thrown for unsafe activities; this is a pragma that tells supporting JavaScript engines to change into strict mode.
 
 It is possible to define a variable globally by simply omitting the 'var' operator! (by-by closure problem!)
-In JavaScript the variable declaration adds a variable into the current execution context ( no block-level scopes!!). There are only two primary types of execution contexts, global and function. When a variable is declared using var, it is automatically added to the most immediate context available. In a function, the most immediate one is the function‚Äôs local context; in a 'with' statement, the most immediate is the function context. If a variable is initialized without first being declared (without 'var'), it gets added to the global context automatically. (( If the variable is declared within the {} it can still be accessible, unless {} isn't a function. (!!) - unlike to the block-level scopes languages like C.))
+In JavaScript the variable declaration adds a variable into the current execution context ( no block-level scopes!!). There are only two primary types of execution contexts, global and function. When a variable is declared using var, it is automatically added to the most immediate context available. In a function, the most immediate one is the functionís local context; in a 'with' statement, the most immediate is the function context. If a variable is initialized without first being declared (without 'var'), it gets added to the global context automatically. (( If the variable is declared within the {} it can still be accessible, unless {} isn't a function. (!!) - unlike to the block-level scopes languages like C.))
 if (true) {
-var color = ‚Äúblue‚Äù;
+var color = ìblueî;
 }
-alert(color); //‚Äùblue‚Äù - executes without a problem!
+alert(color); //îblueî - executes without a problem!
 
 In strict mode, initializing variables without declaration causes an error.
 
 Primitive values are of a fixed size and so are stored in memory on the stack. Reference values are objects and are stored in memory on the heap.
 
 
-Values that should be primitive types should be checked using typeof, and values that should be objects should be checked using instanceof. The typeof operator determines a value‚Äôs primitive type, whereas the instanceof operator is used to determine the reference type of a value.
+Values that should be primitive types should be checked using typeof, and values that should be objects should be checked using instanceof. The typeof operator determines a valueís primitive type, whereas the instanceof operator is used to determine the reference type of a value.
 
 There are five simple data types (also called primitive types) in ECMAScript: Undefined, Null, Boolean, Number, and String. There is also one complex data type called Object, which is an unordered list of name-value pairs. Because there is no way to define your own data types in ECMAScript, all values can be represented as one of these six.
 typeof operator:
 [result:string] = typeof [variable] 
-alert(typeof 'a'); //‚Äùstring‚Äù
+alert(typeof 'a'); //îstringî
 alert(typeof null); //'object'
-alert(typeof 95); //‚Äùnumber‚Äù
+alert(typeof 95); //înumberî
 
 instanceof operator:
 [result:boolean] = [variable] instanceof [constructor]
@@ -89,7 +89,7 @@ alert(person instanceof Object); //is the variable person an Object?
 alert(colors instanceof Array); //is the variable colors an Array?
 alert(pattern instanceof RegExp); //is the variable pattern a RegExp?
 
-(Weird!!) The typeof operator returns ‚Äúundefined‚Äù when called on an uninitialized variable, but it also returns ‚Äúundefined‚Äù when called on an undeclared variable,
+(Weird!!) The typeof operator returns ìundefinedî when called on an uninitialized variable, but it also returns ìundefinedî when called on an undeclared variable,
 
 The value undefined is a derivative of null, so ECMA-262 defi nes them to be superfi cially equal as follows:
 alert(null == undefined); //true
@@ -100,13 +100,13 @@ Number() - casting function. When applied to Boolean values, true and false get 
 
 \n    New line
 
---a; When using either a prefi x increment or a prefix decrement, the variable‚Äôs value is changed before the statement is evaluated. When used on a string that is a valid representation of a number, convert to a number and apply the change. The variable is changed from a string to a number. (sic!) 
+--a; When using either a prefi x increment or a prefix decrement, the variableís value is changed before the statement is evaluated. When used on a string that is a valid representation of a number, convert to a number and apply the change. The variable is changed from a string to a number. (sic!) 
 
-The unary minus operator‚Äôs primary use is to negate a numeric value, such as converting 1 into ‚Äì1.
+The unary minus operatorís primary use is to negate a numeric value, such as converting 1 into ñ1.
 var num = 25;
 num = -num; //becomes -25
 
-The bitwise NOT is represented by a tilde (~) and simply returns the one‚Äôs complement of the number. (This is the end effect of the bitwise NOT: it negates the number and subtracts 1. But bitwise operation is much faster)
+The bitwise NOT is represented by a tilde (~) and simply returns the oneís complement of the number. (This is the end effect of the bitwise NOT: it negates the number and subtracts 1. But bitwise operation is much faster)
 var num1 = 25;     //binary 00000000000000000000000000011001
 var num2 = ~num1; //binary 11111111111111111111111111100110
 alert(num2);     //-26
@@ -130,7 +130,7 @@ var found = false;
 var result = (found && someUndeclaredVariable); //no error
 alert(result); 					//works
 
-If either of the operands for a multiplication operation isn‚Äôt a number, it is converted to a number behind the scenes using the Number() casting function. This means that an empty string is treated as 0, and the Boolean value of true is treated as 1. Same is with substraction, division, modulus.
+If either of the operands for a multiplication operation isnít a number, it is converted to a number behind the scenes using the Number() casting function. This means that an empty string is treated as 0, and the Boolean value of true is treated as 1. Same is with substraction, division, modulus.
 
 If Infinity is multiplied by 0, the result is NaN. (Weird!)
 
@@ -143,8 +143,8 @@ var result = 26 % 5; //equal to 1
 the string.
 
 Use equal (==) and not equal to perform conversion before comparison, and identically equal (===) and not identically equal to perform comparison without conversion:
-alert(5 == ‚Äú5‚Äù); //true, the equal operator first converts the string ‚Äú5‚Äù into the number 5
-alert(5 === ‚Äú5‚Äù); //false
+alert(5 == ì5î); //true, the equal operator first converts the string ì5î into the number 5
+alert(5 === ì5î); //false
 alert(1 == true); //true
 alert(1 === true); //false
 
@@ -174,16 +174,14 @@ default: statement
 No Overloading - last declares shit takes over lol
 
 it is best to rely only on the message property for cross-browser compatibility.
-```
 try {
 window.someNonexistentFunction();
 } catch (error){
 alert(error.message);
 }
-```
+
 The optional finally clause of the try-catch statement always runs its code no matter what. The function returns
 0 when called no matter what. If the finally clause were removed, the function would return 2.
-```
 function testFinally(){
 try {
 	return 2;
@@ -193,61 +191,58 @@ try {
 	return 0;
 }
 }
-```
+
 
 
 
 Example of custom error handling
-```
 if (!(values instanceof Array)){
-throw new Error(‚Äúprocess(): Argument must be an array.‚Äù);
+throw new Error(ìprocess(): Argument must be an array.î);
 }
-```
+
 The best way to think about the difference between throwing errors and catching errors is this: you should catch errors only if you know exactly what to do next. The purpose of catching an error is to prevent the browser from responding in its default manner; the purpose of throwing an error is to provide information about why an error occurred.
 
 You can prevent the default browser error reporting by returning false, as shown here. By returning false, this function effectively becomes a try-catch statement for the entire document, capturing all unhandled runtime errors.
-```
 window.onerror = function(message, url, line){  //the onerror event handler
 alert(message);
 return false;
 };
-```
+
 There is a signifi cant difference between the way browsers handle errors using this event. When the error event occurs in Internet Explorer, normal code execution continues; all variables and data are retained and remain accessible from within the onerror event handler. In Firefox, however, normal code execution ends, and all variables and data that existed prior to the error occurring are destroyed, making it diffi cult to truly evaluate the error.
 
-Images also support an error event. Any time the URL in an image‚Äôs src attribute doesn‚Äôt return a recognized image format, the error event fi res. In this example, an alert is displayed when the image fails to load.
-```
+Images also support an error event. Any time the URL in an imageís src attribute doesnít return a recognized image format, the error event fi res. In this example, an alert is displayed when the image fails to load.
 var image = new Image();
-EventUtil.addHandler(image, ‚Äúload‚Äù, function(event){
-alert(‚ÄúImage loaded!‚Äù);
+EventUtil.addHandler(image, ìloadî, function(event){
+alert(ìImage loaded!î);
 });
-EventUtil.addHandler(image, ‚Äúerror‚Äù, function(event){
-alert(‚ÄúImage not loaded!‚Äù);
+EventUtil.addHandler(image, ìerrorî, function(event){
+alert(ìImage not loaded!î);
 });
-image.src = ‚Äúsmilex.gif‚Äù; //doesn‚Äôt exist
-```
-To set up a JavaScript error-logging system, you‚Äôll first need a page or entry point on the server that can handle the error data. The page need not do anything more than take data from the query string and save it to an error log. This page can then be used with code such as the following:
+image.src = ìsmilex.gifî; //doesnít exist
+
+To set up a JavaScript error-logging system, youíll first need a page or entry point on the server that can handle the error data. The page need not do anything more than take data from the query string and save it to an error log. This page can then be used with code such as the following:
 function logError(sev, msg){
 var img = new Image();
-img.src = ‚Äúlog.php?sev=‚Äù + encodeURIComponent(sev) + ‚Äú&msg=‚Äù +
+img.src = ìlog.php?sev=î + encodeURIComponent(sev) + ì&msg=î +
 encodeURIComponent(msg);
 }
-An Image object (!!!) is used to send the request because of its flexibility, as the Image object is available in all browsers, even those that don‚Äôt support the XMLHttpRequest object. Cross-domain restrictions don‚Äôt apply. Often there is one server responsible for handling error logging from multiple servers, and XMLHttpRequest would not work in that situation. There‚Äôs less of a chance that an error will occur in the process of logging the eror.
+An Image object (!!!) is used to send the request because of its flexibility, as the Image object is available in all browsers, even those that donít support the XMLHttpRequest object. Cross-domain restrictions donít apply. Often there is one server responsible for handling error logging from multiple servers, and XMLHttpRequest would not work in that situation. Thereís less of a chance that an error will occur in the process of logging the eror.
 
-error(message) ‚Äî Logs an error message to the console
-info(message) ‚Äî Logs an informational message to the console
-log(message) ‚Äî Logs a general message to the console
-warn(message) ‚Äî Logs a warning message to the console
+error(message) ó Logs an error message to the console
+info(message) ó Logs an informational message to the console
+log(message) ó Logs a general message to the console
+warn(message) ó Logs a warning message to the console
 
-Another option is to use LiveConnect, which is the ability to run Java code from JavaScript (sick!). Firefox, Safari, and Opera all support LiveConnect and may interact with a Java console. It‚Äôs possible to write messages to the Java console using JavaScript via the following code:
-java.lang.System.out.println(‚ÄúYour message‚Äù);
+Another option is to use LiveConnect, which is the ability to run Java code from JavaScript (sick!). Firefox, Safari, and Opera all support LiveConnect and may interact with a Java console. Itís possible to write messages to the Java console using JavaScript via the following code:
+java.lang.System.out.println(ìYour messageî);
 
 Determining the type of console :
 function log(message){
-if (typeof console == ‚Äúobject‚Äù){
+if (typeof console == ìobjectî){
 console.log(message);
-} else if (typeof opera == ‚Äúobject‚Äù){
+} else if (typeof opera == ìobjectî){
 opera.postError(message);
-} else if (typeof java == ‚Äúobject‚Äù && typeof java.lang == ‚Äúobject‚Äù){
+} else if (typeof java == ìobjectî && typeof java.lang == ìobjectî){
 java.lang.System.out.println(message);
 }
 }
@@ -257,32 +252,32 @@ Logging messages to the JavaScript console is helpful in debugging code, but all
 
 Logging Messages to the Page:
 function log(message){
-var console = document.getElementById(‚Äúdebuginfo‚Äù);
+var console = document.getElementById(ìdebuginfoî);
 if (console === null){
-console = document.createElement(‚Äúdiv‚Äù);
-console.id = ‚Äúdebuginfo‚Äù;
-console.style.background = ‚Äú#dedede‚Äù;
-console.style.border = ‚Äú1px solid silver‚Äù;
-console.style.padding = ‚Äú5px‚Äù;
-console.style.width = ‚Äú400px‚Äù;
-console.style.position = ‚Äúabsolute‚Äù;
-console.style.right = ‚Äú0px‚Äù;
-console.style.top = ‚Äú0px‚Äù;
+console = document.createElement(ìdivî);
+console.id = ìdebuginfoî;
+console.style.background = ì#dededeî;
+console.style.border = ì1px solid silverî;
+console.style.padding = ì5pxî;
+console.style.width = ì400pxî;
+console.style.position = ìabsoluteî;
+console.style.right = ì0pxî;
+console.style.top = ì0pxî;
 document.body.appendChild(console);
 }
-console.innerHTML += ‚Äú<p>‚Äù + message + ‚Äú</p>‚Äù;
+console.innerHTML += ì<p>î + message + ì</p>î;
 }
 
 When a reference value is assigned from one variable to another, the value stored on the variable object is also copied into the location for the new variable. The difference is that this value is actually a pointer to an object stored on the heap.
 var obj1 = new Object();
 var obj2 = obj1;
-obj1.name = ‚ÄúNicholas‚Äù;
-alert(obj2.name); //‚ÄùNicholas‚Äù
+obj1.name = ìNicholasî;
+alert(obj2.name); //îNicholasî
 
 
-JavaScript is a garbage-collected language, meaning that the execution environment is responsible for managing the memory required during code execution. It‚Äôs possible, though not recommended, to trigger the garbage-collection process in some browsers. In Internet Explorer, the window.CollectGarbage() method causes garbage collection to occur immediately. In Opera 7 and higher, calling window.opera.collect() initiates the garbage-collection process.
+JavaScript is a garbage-collected language, meaning that the execution environment is responsible for managing the memory required during code execution. Itís possible, though not recommended, to trigger the garbage-collection process in some browsers. In Internet Explorer, the window.CollectGarbage() method causes garbage collection to occur immediately. In Opera 7 and higher, calling window.opera.collect() initiates the garbage-collection process.
 
-When data is no longer necessary, it‚Äôs best to set the value to null, freeing up the reference ‚Äî this is called dereferencing the value. This advice applies mostly to global values and properties of global objects.
+When data is no longer necessary, itís best to set the value to null, freeing up the reference ó this is called dereferencing the value. This advice applies mostly to global values and properties of global objects.
 
 Constructor pttern of object creation:
 function Person(name, age, job){
@@ -293,8 +288,8 @@ this.sayName = function(){
 alert(this.name);
 };
 }
-var person1 = new Person(‚ÄúNicholas‚Äù, 29, ‚ÄúSoftware Engineer‚Äù);
-var person2 = new Person(‚ÄúGreg‚Äù, 27, ‚ÄúDoctor‚Äù);
+var person1 = new Person(ìNicholasî, 29, ìSoftware Engineerî);
+var person2 = new Person(ìGregî, 27, ìDoctorî);
 alert(person2 instanceof Person); //true (!!)
 
 Major rendering engines: Internet Explorer, Gecko, WebKit, KHTML, and Opera.
